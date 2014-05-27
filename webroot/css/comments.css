@@ -1,0 +1,184 @@
+.comment-form {
+  width: 100%;
+  border-right: 1px solid #ccc;
+}
+
+.comment {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.comments {
+    margin-bottom: 20px;
+}
+
+.comment tr,
+.comment form {
+    background-color: #FFF !important;
+    padding: 0;
+}
+
+.post-avatar {
+    margin-top: 5px;
+    width: 65px;
+}
+
+.gravatar {
+    border-radius: 0px;
+}
+
+.post-body {
+    margin-left: 10px;
+    width: 80%;
+}
+
+.post-name {
+}
+
+.post-time {
+    color: #999;
+    font-size: 14px
+}
+
+.post-content {
+    padding: 5px 0 5px 0;
+    margin: 0;
+    white-space: wrap;
+    overflow: hidden;
+}
+
+.post-footer {
+    color: #999;
+    font-size: 14px;
+}
+
+.post-button {
+    background-color:#99CC00;
+    border:0;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:12px;
+    padding:4px 8px;
+    outline: none;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    margin: 0;
+}
+.post-button:hover {
+    background-color:#FFBB33;
+}
+
+.post-button:active {
+    position:relative;
+    top:1px;
+}
+
+.post-button-text {
+    background-color:#669900;
+    border:0;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:16px;
+    padding:8px 8px;
+    outline: none;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    margin: 0;
+}
+.post-button-text:hover {
+    background-color:#70A800;
+}
+.post-button-text:active {
+    position:relative;
+    top:1px;
+}
+
+/* Forms */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+textarea { 
+  width: 97%;
+    -webkit-transition: background-color .4s, height .4s;
+    -moz-transition: background-color .4s, height .4s;
+    -o-transition: background-color .4s, height .4s;
+    -ms-transition: background-color .4s, height .4s;
+    transition: background-color .4s, height .4s;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+label { color: #666; font-size: 14px;}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea {
+    outline: none;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(122, 192, 0, 0.15);
+    padding: 2%;
+    font-size: 16px; 
+    margin-bottom: 15px;
+    width: 97%;
+    border: 1px solid #FFBB33; 
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    border: 1px solid #FFBB33; 
+    background-color: rgba(255, 255, 255, 1);
+}
+
+textarea:focus {
+    height: 150px;
+}
+
+input[class="form-half"],
+input[class="form-first-half"] {
+    width: 46%;
+}
+
+input[class="form-first-half"] {
+    margin-right: 2%;
+}
+
+legend {
+    font-style: bold;
+    font-size: 24px;
+    color: #70A800;
+}
+
+.form {
+    background-color: #99CC00;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form p {
+    margin: 5px 0;
+}
+
+.form-buttons {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-input-placeholder,
+::-webkit-textarea-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-ms-textarea-placeholder {
+   color: #99CC00;
+}

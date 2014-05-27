@@ -1,0 +1,163 @@
+/* Extra small devices (phones, less than 768px) */
+@media screen and (max-width: 767px) {
+    #featured-1,
+    #featured-2,
+    #featured-3,
+    #triptych-1,
+    #triptych-2,
+    #triptych-3,
+    #footer-col-1,
+    #footer-col-2,
+    #footer-col-3 {
+        .columnNoMargin(@columns);
+    }
+
+    .ask-button {
+        margin-top: 8px;
+    }
+
+    .navbar li {
+        display: none;
+        text-align: center;
+    }
+
+    .navbar li,
+    .navbar li:hover,
+    .navbar li.selected,
+    .navbar li.selected:hover {
+        border: none;
+    }
+
+    .navbar .unclickable {
+        display: block;
+        background-color: @bg2;
+    }
+
+    .navbar .unclickable:hover {
+        display: block;
+        background-color: @bg2;
+    }
+
+    .navbar:hover li {
+        background-color: @bg2;
+    }
+
+    .navbar li {
+        background-color: @grn;
+    }
+
+    #navbar {
+        margin: 0;
+        margin-bottom: 10px;
+        .columnNoMargin(@columns);
+    }
+
+    #navbar:hover {
+        margin: none;
+    }
+
+    .navbar:hover li{
+        display: block;
+    }
+
+    #wrapper-header,
+    #wrapper-footer,
+    #header,
+    #footer,
+    #sidebar,
+    #sidebar-left,
+    #main,
+    #footer,
+    #flash,
+    #full {
+        .columnNoMargin(@columns);
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    h1 span {
+        display: none;
+    }
+
+    /* Force table to not be like tables anymore */
+    .responsive-table table, .responsive-table thead, .responsive-table tbody, .responsive-table th, .responsive-table td, .responsive-table tr {
+        display: block;
+        overflow: hidden;
+    }
+
+    .responsive-table table {
+        .columnNoMargin(@columns);
+    }
+
+    table tr:nth-child(odd) { background-color: lighten(@bg2, 5%); color: @gry2; }
+    table tr:nth-child(even) { background-color: @bg2; color: @gry2; }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .responsive-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+
+    .responsive-table td {
+        /* Behave  like a "row" */
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .responsive-table tr:nth-child(odd) td {
+    }
+
+    .responsive-table td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    /*
+    Label the data
+    */
+    .user-table td:nth-of-type(1):before { content: "Username"; }
+    .user-table td:nth-of-type(2):before { content: "Name"; }
+    .user-table td:nth-of-type(3):before { content: "Email"; }
+    .user-table td:nth-of-type(4):before { content: "Option"; }
+    .user-table td:nth-of-type(5):before { content: "Created"; }
+    .user-table td:nth-of-type(6):before { content: "Updated"; }
+    .user-table td:nth-of-type(7):before { content: "Deleted"; }
+    .user-table td:nth-of-type(8):before { content: "Active"; }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #main {
+        .column(@columns / 3 * 2);
+    }
+
+    #navbar {
+        width: 250px;
+        margin-top: 5px;
+    }
+
+    .sitelogo {
+        display: none;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+    #navbar {
+        margin-top: 35px;
+        width: auto;
+    }
+}

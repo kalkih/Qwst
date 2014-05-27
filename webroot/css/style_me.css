@@ -1,0 +1,192 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic);
+
+/**
+ * General elements
+ */
+
+@import url(figure.css);
+
+body {
+  color: #333;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow-y: scroll;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #666;
+}
+
+a {
+  color: #99CC00;
+  text-decoration: none;
+  border: 0;
+}
+
+img:hover {
+  opacity: 0.8;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+a:hover {
+  color: #FFBB33;
+  text-decoration: underline;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+  margin: 0 auto;
+  width: 980px; 
+  padding: 10px;
+}
+
+#wrapper-header {
+  margin: 0 auto;
+  width: 980px; 
+  padding: 10px;
+}
+
+#wrapper-footer {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 22px;
+}
+
+/**
+ * Layout for header
+ */
+#header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.siteheader {
+  display: inline-block;
+  height: 102px;
+}
+
+.siteheader:hover {
+  text-decoration: none;
+}
+
+.siteheader:hover .sitelogo {
+  opacity: 0;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.siteheader:hover .sitetitle2 {
+  color: #FFBB33;
+}
+
+.sitelogo {
+  width: 100px;
+  height: 102px;
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  background: url(../img/logo.png);
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.sitelogo-below {
+  width: 100px;
+  height: 102px;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  background: url(../img/logo-hover.png);
+}
+
+.title {
+  position: absolute;
+  top: 12px;
+  left: 130px;
+  font-size: 48px;
+}
+
+.sitetitle { color: #666;}
+.sitetitle2 { color: #99CC00; font-weight: 300;}
+.sitetitle3 { color: #737373; font-weight: 300;}
+
+.siteslogan {
+  position: absolute;
+  top: 68px;
+  left: 132px;
+  font-size: 14px;
+  font-style: italic;
+  color: #999;
+}
+
+
+/**
+ * Layout for main
+ */
+
+
+/**
+ * Layout for footer
+ */
+#footer {
+  margin: 0 auto;
+  width: 980px;
+}
+
+.sitefooter {
+  color: #666;
+  text-align: center;
+}
+
+
+/**
+ * For articles
+ */
+.article1 {
+  width: 700px;
+  border-right: 1px solid #ccc;
+  padding-right: 1em;
+}
+
+.article1 h1,
+.article1 h2 {
+  border-bottom: 1px solid #ccc;
+}
+
+.byline {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  color: #666;
+}
+
+.byline p {
+  margin: 0;
+  line-height: 50px;
+}
+
+.right { float: right;}
+.left { float: left;}
+.middle { margin: 0 auto;}
+.clear { clear: both;}

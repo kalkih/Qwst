@@ -1,0 +1,100 @@
+/**
+ * Based on http://dbwebb.se/coachen/en-navbar-med-drop-down-meny-i-ren-html-och-css
+ * Changed to only style li-items instead of a.
+ */
+#navbar {
+  float: left;
+  margin-left: 25px;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  margin-top: 35px;
+  width: auto;
+}
+
+.navbar {
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  text-transform: uppercase;
+}
+
+.navbar .unclickable {
+  display: none;
+}
+
+.navbar .unclickable:hover {
+  background-color: #F5F5F5;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  color: #FFF;
+  position: relative;
+  font-size: 18px;
+}
+
+.navbar a {
+  display: block;
+  padding: .4em .6em .4em .6em;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.navbar li:hover,
+.navbar li.selected:hover {
+  color: @grn;
+}
+
+.navbar li:hover i,
+.navbar li.selected:hover i {
+  color: @grn;
+}
+
+.navbar li.selected-parent,
+.navbar li.selected {
+  color: @grn;
+}
+
+.navbar li.selected-parent i,
+.navbar li.selected i {
+  color: @grn;
+}
+
+.navbar ul ul {
+  padding: 2px 6px 2px 0;
+  position: absolute;
+  left: -9999px;
+  z-index: 2;
+}
+
+.navbar li li {
+  width: 100%;
+  border-top: none;
+}
+
+.navbar li:hover ul {
+  left: 0;
+}
+
+.navbar li li:hover {
+  color: #666;
+  border-color: #666;
+}
+
+.navbar li li.selected {
+  color: #666;
+  border-color: #222;
+}
